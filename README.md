@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,3 +65,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# Personal Project GitHub
+
+## Nama Siswa: Muklisin
+
+## Deskripsi Proyek
+HomePaymentTracker
+
+## Link Repositori GitHub
+"HomePaymentTracker" adalah sebuah aplikasi web yang bertujuan untuk membantu pemilik rumah dalam memantau dan mengelola pembayaran kredit rumah mereka dengan lebih efisien. Aplikasi ini menyediakan berbagai fitur yang memudahkan pengguna untuk menjaga konsistensi dalam pembayaran kredit rumah mereka, menghindari keterlambatan pembayaran, dan mengelola informasi keuangan terkait dengan kepemilikan rumah.
+>>>>>>> 17b5352b0fdc590032804528b2c52f9c6eac528e
