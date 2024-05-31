@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+<<<<<<< HEAD
 use App\Http\Controllers\RegistrasiController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
@@ -44,3 +45,8 @@ Route::get('/client/doc', [ClientController::class, 'doc'])->name('client.doc');
 Route::get('/success-page', function () {
     return view('client.index'); // Ganti 'success' dengan nama view yang sesuai dengan halaman sukses Anda
 })->name('success-page');
+=======
+Route::get('/', function () {
+    return view('home');
+});
+>>>>>>> ad09c1548b0f0f80fedec977885a536e811cfb98
