@@ -1,0 +1,102 @@
+/* Resetting default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the container */
+#container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #ecf0f1;
+}
+
+/* Styling the left section */
+.left {
+  width: 70%;
+  padding: 1rem;
+  background: #bdc3c7;
+}
+
+/* Styling the map div */
+#map {
+  width: 100%;
+  height: 100%;
+  background-color: #34495e; /* Temporary background color */
+}
+
+/* Styling the right section */
+.right {
+  width: 30%;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+.right h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.right form {
+  padding: 1rem;
+}
+
+.right form input[type="text"],
+.right form input[type="number"],
+.right form select {
+  width: 100%;
+  padding: 0.5rem 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+#zip {
+  display: flex;
+  justify-content: space-between;
+}
+
+#zip label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#zip label:last-child {
+  margin-right: 0;
+}
+
+.right input[type="submit"],
+.right button {
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  background: #34495e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.right input[type="submit"]:hover,
+.right button:hover {
+  background: #2c3e50;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  background-color: #218838;
+}

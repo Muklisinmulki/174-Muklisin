@@ -1,0 +1,397 @@
+
+.container{
+  display: flex;
+  min-height:100vh;
+}
+ 
+.sidebar {
+  background-color: #111827;
+  width: 260px;
+  padding: 24px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.main-content{
+  background-color: #f5f5f5;
+  flex-grow:1;
+  height: 800vh;
+  margin-top: 80px;
+  margin-left: 250px;
+}
+
+.sidebar .description-header{
+  font-size: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+  color: #fff;
+}
+
+.sidebar a{
+  text-decoration: none;
+}
+
+.sidebar .header .list-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.sidebar .header .illustration{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  margin: 10px 0 22px 0;
+  box-sizing: border-box;
+}
+
+.sidebar .main .list-item .description{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align:center;
+  color: #fff;
+}
+
+.sidebar .main .list-item .fas{
+  margin-right: 12px;
+}
+
+.sidebar .main .list-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 8px;
+  width: 212px;
+  box-sizing: border-box;
+  transition: all ease-in .2s;
+}
+
+.sidebar .main .list-item:hover{
+  background: #FF9900;
+  transition: all ease-in .2s;
+}
+
+.main-dashboard{
+  position: absolute;
+  top: 60px;
+  width: calc(100% - 260px);
+  left: 260px;
+  min-height: calc(100vh - 60px);
+  background: #f5f5f5;
+}
+
+.cards{
+  width: 96%;
+  padding: 35px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.cards .card{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px 0 rgba(0, 0, 0,  0.08);
+  transition: all ease-in .2s;
+}
+
+.number{
+  font-size: 35px;
+  font-weight: 500;
+  color: #299B63;
+}
+
+.card-name{
+  color: #888;
+  font-weight: 600;
+}
+
+.icon-box i{
+  font-size: 45px;
+  color: #299B63;
+}
+
+.cards .card:hover{
+  background: #299B63;
+  transition: all ease-in .2s;
+}
+
+.cards .card:hover .number{
+  color: #fff;
+  transition: all ease-in .2s;
+}
+
+.cards .card:hover .card-name{
+  color: #fff;
+  transition: all ease-in .2s;
+}
+
+.cards .card:hover .icon-box i{
+  color: #fff;
+  transition: all ease-in .2s;
+}
+
+.charts{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.charts-card{
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+  -webkit-column-break-inside: avoid;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  box-shadow: 0 6px 7px -4px rgb(0,0,0,0.2);
+}
+
+.charts-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tabel{
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tabel .tabel-1 {
+  min-height: 80vh;
+  flex: 5;
+  background: white;
+  margin: 10px 25px 25px 25px;
+  box-shadow: 0 6px 7px -4px rgb(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.tabel .tabel-2{
+  flex: 2;
+  background: white;
+  min-height: 80vh;
+  margin: 10px 25px;
+  box-shadow: 0 6px 7px -4px rgb(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.tabel .tabel-2 table td:nth-child(1) img{
+  height: 40px;
+  width: 40px;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 10px;
+  border-bottom: 2px solid #999;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 8px 20px rgba(0, 86, 179, 0.4);
+  transform: translateY(-5px);
+}
+
+.btn:active {
+  background-color: #004085;
+  box-shadow: 0px 4px 10px rgba(0, 64, 133, 0.2);
+  transform: translateY(0);
+}
+
+.btn:focus {
+  outline: none;
+}
+table{
+  padding: 10px;
+}
+th,
+td{
+  text-align: left;
+  padding: 8px;
+}
+
+#map { height: 500px; }
+
+
+.content{
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.content .content-1{
+  min-height: 60vh;
+  flex: 5;
+  background: white;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 0 6px 7px -4px rgb(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+.content .content-2{
+  flex: 2;
+  position: relative;
+  background: white;
+  max-width: 700px;
+  width: 100%;
+  min-height: 60vh;
+  margin: 10px 25px;
+  box-shadow: 0 6px 7px -4px rgb(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+form{
+  padding: 0 15px 0 15px ;
+}
+
+form .input-box{
+  width: 100%;
+  
+}
+
+.input-box label{
+  font-size: 15px;
+  color: #333;
+}
+
+form .input-box input{
+  position: relative;
+  height: 30px;
+  width: 90%;
+  outline: none;
+  font-size: 15px;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px 0 15px ;
+}
+
+form .column{
+  display: flex;
+  column-gap: 15px;
+  width: 95%;
+}
+
+.nav-profile {
+  background-color: #4CAF50; /* Change this to the desired background color */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the nav */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Positions the link to the right */
+  position: fixed; /* Fixes the nav bar at the top */
+  width: 100%; /* Ensures the nav bar spans the full width of the page */
+  top: 0;
+  z-index: 1000; /* Ensures the nav bar is on top of other elements */
+  height: 60px; /* Sets the height of the nav bar */
+}
+
+.nav-profile a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: white;
+  border-radius: 50%; /* Makes the link circular */
+  text-decoration: none;
+  color: #4CAF50; /* Change this to the desired icon color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow to the link */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  margin-right: 10px; /* Adds some spacing to the right */
+}
+
+.nav-profile a:hover {
+  background-color: #45a049; /* Change this to the desired hover background color */
+  color: white; /* Change this to the desired hover icon color */
+}
+
+.nav-profile i {
+  font-size: 24px; /* Adjust the icon size as needed */
+}
+
+.nav-profile .search-bar {
+  flex: 1;
+  max-width: 200px;
+  margin: 0 auto;
+  position: relative; /* Mengatur posisi relatif untuk ikon */
+}
+
+.nav-profile .search-bar input {
+  width: calc(100% - 10px); /* Mengurangi lebar input untuk menampung ikon */
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.nav-profile .search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  position: absolute; /* Mengatur posisi absolut untuk ikon */
+  right: 0; /* Menempatkan ikon di sebelah kanan input */
+  top: 50%; /* Pusatkan ikon secara vertikal */
+  transform: translateY(-50%); /* Koreksi posisi vertikal */
+}
+.nav-profile .search-bar button i{
+  font-size: 16px; /* Ukuran ikon */
+  color: #555; /* Warna ikon */
+  vertical-align: middle; /* Pusatkan ikon secara vertikal */
+}
+
+.nav-profile span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+  font-size: 14px; /* Ukuran font */
+  text-transform: uppercase; /* Mengubah teks menjadi huruf besar */
+  letter-spacing: 1px; /* Jarak antar huruf */
+}
