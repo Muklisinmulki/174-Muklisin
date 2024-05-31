@@ -4,18 +4,6 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-<<<<<<< HEAD
-class CreateUsersTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        // Dalam migrasi atau definisi skema tabel 'users'
-=======
 return new class extends Migration
 {
     /**
@@ -23,23 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
->>>>>>> ad09c1548b0f0f80fedec977885a536e811cfb98
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-<<<<<<< HEAD
-            $table->string('phone_number')->nullable();
-            $table->string('role')->nullable()->default('client'); // Kolom 'role' menjadi nullable dan memiliki nilai default
-=======
->>>>>>> ad09c1548b0f0f80fedec977885a536e811cfb98
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
-<<<<<<< HEAD
-=======
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
             $table->string('email')->primary();
@@ -55,21 +35,10 @@ return new class extends Migration
             $table->longText('payload');
             $table->integer('last_activity')->index();
         });
->>>>>>> ad09c1548b0f0f80fedec977885a536e811cfb98
     }
 
     /**
      * Reverse the migrations.
-<<<<<<< HEAD
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('users');
-    }
-}
-=======
      */
     public function down(): void
     {
@@ -78,4 +47,4 @@ return new class extends Migration
         Schema::dropIfExists('sessions');
     }
 };
->>>>>>> ad09c1548b0f0f80fedec977885a536e811cfb98
+
